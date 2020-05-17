@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ecommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- end of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="head">TECHRIES ECOMMERCE WEBSITE</h1>
+    </div>
+    <nav id="nav">
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div id="container">
+      <!-- <h2>TECHRIES COMPANY LIMITED</h2> -->
+      <h3>search items using AI</h3>
+      <button type="button" onclick="init()" id="btn">Launch AI</button>
+      <div id="webcam-container"></div>
+      <div id="label-container"></div>
+    </div>
+    <div id="item">
+      <h3 id="name" style="color: black;"></h3>
+      <img src="" alt="" id="img1" />
+      <h3 id="id" style="color: black;"></h3>
+      <h3 id="price" style="color: black;"></h3>
+    </div>
+    <hr />
+    <!-- this is a carousel  -->
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="c7.jpeg" alt="cup" style="width: 100%; height: 400px;" />
+          </div>
+
+          <div class="item">
+            <img
+              src="l1.jpg"
+              alt="led screen"
+              style="width: 100%; height: 400px;"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="r1.jpg"
+              alt="remote"
+              style="width: 100%; height: 400px;"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- end of the carousel-->
+
+    <div id="itemcontainer"></div>
+    <footer id="footer">
+      <div id="foot">
+        <h3 style="text-align: center;">
+          <span>copyright &copy;</span>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </h3>
+        <p style="color: #ffff;">bayorwor60@gmail.com or tel:+23350 541 9444</p>
+      </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script src="tensorjs.js"></script>
+  </body>
+</html>

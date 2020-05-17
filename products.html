@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ecommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <h1 id="head">TECHRIES ECOMMERCE WEBSITE</h1>
+    </div>
+    <nav id="nav">
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <!-- this are static items -->
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <h3 style="color: #000;">below are the available products here</h3>
+    </div>
+    <hr />
+    <!-- below are static items  -->
+    <div id="itemcontainer" style="margin: 20px;">
+      <div id="item1">
+        <h3 style="color: black;">Cup</h3>
+        <img src="/c7.jpeg" alt="" id="img" />
+        <h3 id="id" style="color: black;">7 pcs</h3>
+        <h3 id="price" style="color: black;">GHC 45.00</h3>
+        <input type="submit" value="add to chart" id="btn" />
+      </div>
+      <div id="item1">
+        <h3 style="color: black;">remote</h3>
+        <img src="/r1.jpg" alt="" id="img" />
+        <h3 id="id" style="color: black;">21pcs</h3>
+        <h3 id="price" style="color: black;">GHC 80.00</h3>
+        <input type="submit" value="add to chart" id="btn" />
+      </div>
+      <div id="item1">
+        <h3 style="color: black;">iron</h3>
+        <img src="/i1.png" alt="" id="img" />
+        <h3 id="id" style="color: black;">14 pcs</h3>
+        <h3 id="price" style="color: black;">GHC 60.00</h3>
+        <input type="submit" value="add to chart" id="btn" />
+      </div>
+      <div id="item1">
+        <h3 style="color: black;">tooth brush</h3>
+        <img src="/t1.jpg" alt="" id="img" />
+        <h3 id="id" style="color: black;">30 pcs</h3>
+        <h3 id="price" style="color: black;">GHC 45.00</h3>
+        <input type="submit" value="add to chart" id="btn" />
+      </div>
+      <div id="item1">
+        <h3 style="color: black;">LED screen</h3>
+        <img src="/l1.jpg" alt="" id="img" />
+        <h3 id="id" style="color: black;">10 pcs</h3>
+        <h3 id="price" style="color: black;">GHC 645.00</h3>
+        <input type="submit" value="add to chart" id="btn" />
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="foot">
+        <h3 style="text-align: center;">
+          <span>copyright &copy;</span>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </h3>
+        <p style="color: #ffff;">bayorwor60@gmail.com or tel:+23350 541 9444</p>
+      </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script src="tensorjs.js"></script>
+  </body>
+</html>
